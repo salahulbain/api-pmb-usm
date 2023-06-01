@@ -13,7 +13,7 @@ class MahasiswaController extends BaseController
 {
     public function getMahasiswa(Request $request): JsonResponse
     {
-        $mahasiswa = DB::table('pendaftaran')->select('nama_lengkap', 'nisn', 'email', 'password')->get();
+        $mahasiswa = DB::table('pendaftaran')->select('nama_lengkap', 'nisn', 'email', 'password', 'jurusan_pilihan', 'jalur_masuk')->get();
 
         return $this->sendResponse(Camaba::collection($mahasiswa), 'mahasiswa berhasil singkron');
     }

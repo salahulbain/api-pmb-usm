@@ -15,10 +15,12 @@ class Camaba extends JsonResource
     public function toArray(Request $request): array
     {
         return [
-            'name'     => $this->nama_lengkap,
-            'username' => $this->nisn,
-            'email'    => $this->email,
-            'password' => $this->password,
+            'nama'            => $this->nama_lengkap,
+            'username'        => $this->nisn,
+            'email'           => $this->email,
+            'password'        => $this->password,
+            'jurusan_pilihan' => $this->jurusan_pilihan,
+            'jalur_masuk'     => $this->jalur_masuk,
         ];
     }
 }
