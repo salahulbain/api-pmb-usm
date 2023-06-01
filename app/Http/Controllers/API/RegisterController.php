@@ -12,34 +12,6 @@ use Illuminate\Http\JsonResponse;
 class RegisterController extends BaseController
 {
     /**
-     * Register api
-     *
-     * @return \Illuminate\Http\Response
-     */
-    // public function register(Request $request): JsonResponse
-    // {
-    //     $validator = Validator::make($request->all(), [
-    //         'name'       => 'required',
-    //         'email'      => 'required|email',
-    //         'username'   => 'required',
-    //         'password'   => 'required',
-    //         'c_password' => 'required|same:password',
-    //     ]);
-
-    //     if ($validator->fails()) {
-    //         return $this->sendError('Validation Error.', $validator->errors());
-    //     }
-
-    //     $input             = $request->all();
-    //     $input['password'] = bcrypt($input['password']);
-    //     $user              = User::create($input);
-    //     $success['token']  = $user->createToken('API-PMB-USM')->accessToken;
-    //     $success['name']   = $user->name;
-
-    //     return $this->sendResponse($success, 'User register successfully.');
-    // }
-
-    /**
      * Login api
      *
      * @return \Illuminate\Http\Response
